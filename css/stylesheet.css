@@ -4,11 +4,117 @@
     padding: 0;
 }
 
-form {
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+header {
+    background-color: #2d3945;
+    color: white;
+    padding: 25px 50px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.header h1 { 
+    margin-bottom: .5rem;
+}
+
+body {
+    font-family:'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
     max-width: 300px; 
     margin: 0 auto;
 }
 
+button {
+    background-color: #4cbbb4;
+    color: white;
+    border: none; 
+    padding: 1.5rem 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input,
+textarea,
+select {
+    background-color: #eff0f1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.contact label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.contact, {
+    margin: 1.5rem 0;
+}
+
+.contact input,
+.contact select,
+.selection textarea {
+    width: 100%;
+}
+
+.contact input[id="zip"] { width: 50%; }
+
+.light-grey,
+label {
+    font-size: .9rem;
+    color: #768593;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    margin-bottom: 200px;
+}
+
+footer p {
+    margin-top: 25px;
+}
+
+label[for="other"] {
+    font-size: small;
+
+}
+
+.thin-line {
+    margin-bottom: 20px;
+    padding: 1px 0px;
+    background-color: #2d3945;
+    border: none;
+}
+
+.thick-line {
+    padding: 2px 0px;
+    background-color: #2d3945;
+    border: none;
+    margin-bottom: 5px;
+}
 @media screen and (min-width: 768px) {
 
 
