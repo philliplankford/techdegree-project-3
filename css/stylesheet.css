@@ -49,6 +49,12 @@ button {
     width: 100%;
 }
 
+.contact, 
+.selection{
+    background-color: pink;
+    border-radius: 5px;
+}
+
 input,
 textarea,
 select {
@@ -58,12 +64,16 @@ select {
     padding: 10px 20px;
 }
 
+textarea {
+    margin-top: 10px;
+}
+
 .contact label {
     display: block;
     margin-top: 1rem;
 }
 
-.contact, {
+.contact {
     margin: 1.5rem 0;
 }
 
@@ -86,20 +96,29 @@ fieldset {
     border: none;
 }
 
-footer {
-    text-align: center;
-    font-style: italic;
-    font-size: small;
-    margin-bottom: 200px;
-}
-
 footer p {
     margin-top: 25px;
+    font-size: .6rem;
+    color: #768593;
 }
 
-label[for="other"] {
-    font-size: small;
+.selection label[for="html-news"],
+.selection label[for="css-news"],
+.selection label[for="javascript-news"],
+.selection label[for="html"],
+.selection label[for="plain-text"]{
+    display: inline-block;
+    margin: .5rem .5rem;
+}
 
+.last-contact,
+.newsletter-options,
+.newsletter-format {
+    margin: 10px 0;
+}
+
+.selection {
+    margin-bottom: 10px;
 }
 
 .thin-line {
@@ -115,7 +134,63 @@ label[for="other"] {
     border: none;
     margin-bottom: 5px;
 }
+
+.news-cap {
+    font-size: .8rem;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    margin-bottom: 150px;
+}
+
+input::placeholder {
+    color: #2d3945;;
+    text-align: right;
+    font-size: .8rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column; 
+    }
+    .flex-inputs {
+        display: flex; 
+        flex-direction: row;
+    }
+    main {
+        max-width: 748px;
+        margin: 0 auto;
+    }
+
+    input,
+    select {
+        flex-basis: 75%;
+    }
+
+    label {
+        flex-basis: 25%;
+    }
+
+    .contact input[id="zip"] {
+        flex-basis: 25%;
+    }
+
+    .flex-inputs {
+        margin: 1rem 0;
+    }
 
 
 }
