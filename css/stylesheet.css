@@ -10,6 +10,13 @@ h1 {
     font-size: 1.2em;
 }
 
+h3 {
+    text-align: center; 
+    margin: 0; 
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 header {
     background-color: #2d3945;
     color: white;
@@ -41,7 +48,7 @@ main {
 }
 
 button {
-    background-color: #4cbbb4;
+    background-color: #2d3945;
     color: white;
     border: none; 
     padding: 1.5rem 0;
@@ -51,21 +58,27 @@ button {
 
 .contact, 
 .selection{
-    background-color: pink;
+    background-color: #fadadd;
     border-radius: 5px;
 }
 
 input,
 textarea,
 select {
-    background-color: #eff0f1;
+    background-color: ghostwhite;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
 }
 
+option:first-child {
+    color: #768593;
+}
+
 textarea {
     margin-top: 10px;
+    font-size: .8rem; 
+
 }
 
 .contact label {
@@ -88,7 +101,7 @@ textarea {
 .light-grey,
 label {
     font-size: .9rem;
-    color: #768593;
+    color: #2d3945;
     margin-bottom: 10px;
 }
 
@@ -99,7 +112,7 @@ fieldset {
 footer p {
     margin-top: 25px;
     font-size: .6rem;
-    color: #768593;
+    color: #2d3945;
 }
 
 .selection label[for="html-news"],
@@ -147,18 +160,25 @@ footer {
 }
 
 input::placeholder {
-    color: #2d3945;;
+    color: #768593;;
     text-align: right;
     font-size: .8rem;
 }
 
 input:focus,
 textarea:focus,
-select:focus,
+select:focus {
+    outline-color: #2d3945; 
+    outline-width: 5px;
+    outline-style: dashed; 
+    transition: outline-width .5s;
+}
+
 button:focus {
-    outline: none; 
-    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-    border-radius: 5px;
+    outline-color: #06e7cb; 
+    outline-width: 5px;
+    outline-style: dashed; 
+    transition: outline-width .5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -191,6 +211,4 @@ button:focus {
     .flex-inputs {
         margin: 1rem 0;
     }
-
-
 }
