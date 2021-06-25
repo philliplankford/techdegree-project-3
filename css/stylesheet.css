@@ -4,15 +4,10 @@
     padding: 0;
 }
 
-h1 {
+h1,
+h3 {
     text-align: center;
     margin: 0;
-    font-size: 1.2em;
-}
-
-h3 {
-    text-align: center; 
-    margin: 0; 
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -27,12 +22,12 @@ legend {
     font-weight: bold;
 }
 
-.header {
+.signup-title {
     text-align: center;
     padding: 1rem;
 }
 
-.header h1 { 
+.signup-title h1 { 
     margin-bottom: .5rem;
 }
 
@@ -57,7 +52,7 @@ button {
 }
 
 .contact, 
-.selection{
+.selection {
     background-color: #fadadd;
     border-radius: 5px;
 }
@@ -78,7 +73,6 @@ option:first-child {
 textarea {
     margin-top: 10px;
     font-size: .8rem; 
-
 }
 
 .contact label {
